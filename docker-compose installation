@@ -1,0 +1,34 @@
+//to install docker and start it
+sudo yum install docker -y
+sudo service docker start
+   23  sudo service docker status
+
+// to install docker-compose 
+   31  sudo curl -L https://github.com/docker/compose/releases/latest/download/docker-compose-$(uname -s)-$(uname -m) -o /usr/local/bin/docker-compose
+   32  sudo chmod +x /usr/local/bin/docker-compose
+   33  docker-compose version
+   34  sudo yum install git -y
+
+
+
+
+1  mkdir mynodeapp
+    2  cd mynodeapp/
+    3  git init
+    4  git pull https://github.com/ravibagale/nodeapp.git
+
+    6  ls
+    7  nano docker-compose.yml
+    8  ls
+
+   15  nano nginx.conf
+   16  ls
+   17  docker-compose up -d
+   18  docker ps
+   49  git config --global user.name ankita Sangale
+   50  git config --global user.name 'ankita Sangale'
+   51  git config --global user.email 'ankita@sangale.com'
+   52  git remote add origin https://github.com/anksj07/nodejsapp.git
+   53  git add .
+   54  git commit -m "success code "
+   55  git push origin master
